@@ -1,0 +1,21 @@
+body{
+    background-image: url(galaxy-5515384_1920.jpg);
+}
+.center{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    word-spacing: 5px;
+    font-size: 20px;
+}
+@keyframes txt{
+    0% {color: yellow;}
+    5% {color: blue;}
+    100% {color: blue;}
+}
+.texte{
+    color: yellow;
+    text-align: center;
+    animation-name: txt;
+    animation-duration: 350s;
+}
