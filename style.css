@@ -1,21 +1,37 @@
 body{
     background-image: url(galaxy-5515384_1920.jpg);
+   transform: rotate3d(0,-1,0, 20deg);
 }
 .center{
-    margin: auto;
-    width: 50%;
-    padding: 10px;
     word-spacing: 5px;
-    font-size: 20px;
-}
-@keyframes txt{
-    0% {color: yellow;}
-    5% {color: blue;}
-    100% {color: blue;}
+    font-size: 80px;
+    text-align: center;
+    transform: rotate3d(-1,0,0, 65deg);
 }
 .texte{
     color: yellow;
-    text-align: center;
-    animation-name: txt;
-    animation-duration: 350s;
+    animation-duration: 200s;
+    animation-name: slide;
+}
+h1{
+     color: rgb(121, 155, 244);
+    font-size: 70px;
+    animation: slidesDown;
+    animation-duration: 3s;
+
+
+}
+@keyframes slidesDown{
+    from{font-size: 70px;}
+    to{font-size: 120px;}
+
+}
+@keyframes slide{
+    0%{
+        transform:translateY(10%);}
+    100%{transform: translateY(-100%);}
+    }
+@keyframes size{
+    100%{font-size: 80px};
+    0%{font-size:10px };
 }
